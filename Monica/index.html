@@ -1,0 +1,887 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Catalogo</title>
+<link rel="stylesheet" href="themes/style.min.css" />
+<link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile.structure-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+			
+</head>
+
+<body>
+
+<div data-role="page" id="inicio">
+  <div data-role="header">
+    <h1></h1>
+    <p align="center"> <img src="images/logo.png" width="442" height="130" /></p>
+<div data-role="controlgroup" data-type="horizontal" align="center"><a href="#agregarproductos" data-role="button" data-icon="plus">Agregar Productos</a><a href="#acercademi" data-role="button" data-icon="info">Acerca de mi</a></div>
+  </div>
+  
+  <div data-role="content">
+    <div data-role="collapsible-set">
+      <div data-role="collapsible">
+        <h3>Samsung</h3>
+        <p>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+          <li><a href="#info1">Samsung Grand Prime</a></li>
+          <li><a href="#info2">Samsung J7</a></li>
+          <li><a href="#info3">Samsung S6</a></li>
+        </ul>
+        </p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>Sony</h3>
+        <p>
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+          <li><a href="#info4">Sony XPERIA C5</a></li>
+          <li><a href="#info5">Sony XPERIA ZL</a></li>
+          <li><a href="#info6">Sony XPERIA M</a></li>
+        </ul>
+        </p>
+      </div>
+      <div data-role="collapsible" data-collapsed="true">
+        <h3>LG</h3>
+        <p>        
+        <ul data-role="listview" data-filter="true" data-filter-placeholder="Buscar">
+          <li><a href="#info7">LG G5</a></li>
+          <li><a href="#info8">LG G4</a></li>
+          <li><a href="#info9">LG G FLEX 2</a></li>
+        </ul>
+        </p>
+      </div>
+    </div>
+    
+<br>    
+    
+  </div>
+  
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">info</a></li>
+ <li><a href="#agregarproductos" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+  
+</div>
+<div data-role="page" id="agregarproductos">
+  <div data-role="header">
+    <h1>Registro de Productos</h1>
+  </div>
+  <div data-role="content">
+    
+    <div data-role="fieldcontain">
+      <label for="textinput">id:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+    </div>
+  
+      <div data-role="fieldcontain">
+      <label for="textinput">Nombre del Producto:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+    </div>
+    
+    <div data-role="fieldcontain">
+      <label for="textinput">Imagen:</label>
+      <input type="file" name="textinput" id="textinput" value=""  />
+    </div>
+  
+      <div data-role="fieldcontain">
+      <label for="textinput">Descripción:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+    </div>
+    
+      <div data-role="fieldcontain">
+     <label for="slider">Precio:</label>
+     <input type="range" name="slider" id="slider" value="0" min="0" max="10000" />
+   </div>
+ 
+        <div data-role="fieldcontain">
+         <label for="textinput">Existencia:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+          </fieldset>
+        </div>
+     
+
+
+    
+      <div data-role="fieldcontain">
+        <label for="selectmenu" class="select">Categoria:</label>
+        <select name="selectmenu" id="selectmenu">
+          <option value="option1">Samsung</option>
+          <option value="option2">Sony</option>
+          <option value="option3">LG</option>
+        </select>
+      </div>
+  
+  
+      <div data-role="fieldcontain">
+      <label for="textinput">Fecha de Registro:</label>
+      <input type="text" name="textinput" id="textinput" value=""  />
+    </div>
+    
+      <div data-role="controlgroup" data-type="horizontal" align="center"><a href="#" data-role="button">Guardar</a><a href="#inicio" data-role="button">Cancelar</a></div>
+  
+  
+  
+  
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#acercademi" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="informacionproducto">
+  <div data-role="header">
+    <h1>Información del Producto</h1>
+  </div>
+  <div data-role="content" align="center"> información 
+  <a href="#" data-role="button">Comprar</a> </div>
+  
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#inicio" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+
+
+
+<div data-role="page" id="acercademi">
+  <div data-role="header">
+    <h1>Acerca de mi</h1>
+  </div>
+  <div data-role="content">
+  <p align="center"> <img src="images/20160521_130347.jpg" width="250" height="400" /></p>
+  <p align="center">
+  <h3><p align="center">Nombre:</h3> 
+  <p align="center">Ana Paulina Lozano Trujillo <br>
+  <h3><p align="center">Carrera:</h3>
+  <p align="center">Lic. en Ingenieria en Sistemas de Información
+  <br>
+  <h3><p align="center">Materia:</h3>
+  <p align="center">Desarrollo de Aplicaciones e-commerce
+  <br>
+  <h3><p align="center">Preferencias:</h3>
+  <p align="center">Domir, Cantar, Ir de Compras :)
+  </p>
+  </div>
+  <div data-role="footer" data-position="fixed" data-id="footerPpal">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info">
+  <div data-role="header">
+    <h1>Mas Información</h1>
+  </div>
+  
+  <div data-role="content"> Aplicación desarrollada mediante PhoneGap para Proyecto Final por Paulina Lozano - Junio 2016 <a href="#" data-rel="back" data-role="button">Cerrar</a> </div>
+  
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+
+ </div>
+    </h4>
+  </div>
+</div>
+
+<div data-role="page" id="info1">
+  <div data-role="header">
+  <p align="center"> <img src="images/grandprime.png" width="250" height="300" /> </p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+   
+   
+   	<h3> <p align="center">Id: </h3>
+    <p align="center"> 1
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Samsung Grand Prime
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *5"
+    <br>
+	*960 x 540 pixels
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	*5.7 x 2.84 x 0.34 pulgadas
+    <br>
+	*5.5 onzas
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android 5.1 Lollipop
+    <br>
+    *Procesador de cuádruple núcleo de 1.2 GHz
+    <br>
+    <br>
+    Cámara, fotos y video
+    <br>
+    *Cámara de 8 megapíxeles
+    <br>
+    *Cámara frontal de 5 MP con lente gran angular
+    <br>
+    <br>
+    Memoria
+    <br>
+	*1.5 GB de RAM / 8 GB de ROM
+    </p>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$3700
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">8
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Samsung
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">01/06/2016
+    </p>
+    </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info2">
+  <div data-role="header">
+  <p align="center"> <img src="images/samj7.png" width="358" height="330" /> </p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	<h3> <p align="center">Id: </h3>
+    <p align="center"> 2
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Samsung J7
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *Super AMOLED touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	*720 x 1280 pixels, 5.5 pulgadas
+    <br>
+	*171 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v5.1 Lollipop
+    <br>
+    * Procesador Qualcomm MSM8939 Snapdragon 615 octa-core (4xCortex-A57@1.4GHz + 4xCortex-A53@1GHz), GPU Adreno 405 / Exynos 7580 octa-core 1.5GHz, GPU Mali-T720MP2
+    <br>
+    <br>
+    Camara
+    <br>
+    *13 MP, 4128 x 3096 pixels, autofocus, flash LED, geo-tagging, detección de rostro y sonrisa, foco táctil, video 1080p@30fps, cámara frontal 5 MP, 1080p, flash LED
+    <br>
+    <br>
+    Memoria
+    <br>
+	*16GB memoria interna, 1.5GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 3000 mAh  
+    </p>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$9500
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">10
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Samsung
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">31/05/2016
+    </p>
+    </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info3">
+  <div data-role="header">
+  <p align="center"> <img src="images/samsungs6.png" width="358" height="330" /></p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  <h3> <p align="center">Id: </h3>
+    <p align="center"> 3
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Samsung S6
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *Super AMOLED touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1440 x 2560 pixels, 5.1 pulgadas
+    <br>
+	*138 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v5.0 Lollipop
+    <br>
+    *Procesador Exynos 7420 octa-core 64 bits (4 x Cortex-A53@1.5GHz + 4 x Cortex-A57@2.1GHz), GPU Mali-T760
+    <br>
+    <br>
+    Camara
+    <br>
+    *16 MP, 3456 x 4608 pixels, autofocus, flash LED, geo-tagging, detección de rostro y sonrisa, foco táctil, estabilización óptica de imagen, video 2160p@30fps, 1080p@60fps, OIS, cámara frontal 5 MP 1080p
+    <br>
+    <br>
+    Memoria
+    <br>
+	*32GB/64GB/128GB memoria interna, 3GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 2550 mAh
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$8400
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">5
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Samsung
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">03/06/2016
+    </p>
+    
+    </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info4">
+  <div data-role="header">
+  <p align="center"> <img src="images/sony xperia c5.png" width="461" height="381" /></p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+   	<h3> <p align="center">Id: </h3>
+    <p align="center"> 4
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Sony XPERIA C5
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *LCD IPS touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1080 x 1920 pixels, 6.0 pulgadas
+    <br>
+	*187 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v5.0 Lollipop
+    <br>
+    *Procesador Mediatek Mediatek MT6752 octa-core 1.7GHz, GPU Mali-T760MP2
+    <br>
+    <br>
+    Camara
+    <br>
+    *13 MP, 4128 x 3096 pixels, autofocus, flash LED, geo-tagging, foco táctil, detección de rostro y sonrisa, HDR; video 1080p@30fps, HDR; cámara frontal 13 MP, flash LED, video 1080p@30fps
+    <br>
+    <br>
+    Memoria
+    <br>
+	*16GB memoria interna, 2GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 2930 mAh fija
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$6000
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">6
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Sony
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">30/05/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info5">
+  <div data-role="header">
+  <p align="center"> <img src="images/sony xperia zl.png" width="430" height="350" /> </p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	<h3> <p align="center">Id: </h3>
+    <p align="center"> 5
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Sony XPERIA ZL
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *TFT touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1080 x 1920 pixels, 5.0 pulgadas
+    <br>
+	*151 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v4.1.2 Jelly Bean
+    <br>
+    *Procesador Qualcomm MSM8064 Snapdragon S4 Pro quad-core 1.5GHz, GPU Adreno 320
+    <br>
+    <br>
+    Camara
+    <br>
+    *13 MP, 4128x3096 pixels, flash LED, geo-tagging, foco táctil, detección de rostro y sonrisa, fotos panorámicas 3D, estabilizador de imagen, HDR, sensor Exmor RS, video 1080p@30fps, autofoco contínuo, luz de video, cámara frontal 2 MP 720p@30fps
+    <br>
+    <br>
+    Memoria
+    <br>
+	*16GB memoria interna, 2GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 2370 mAh
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$5500
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">2
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Sony
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">28/05/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info6">
+  <div data-role="header">
+  <p align="center"> <img src="images/sony xperia m.png" width="461" height="381" /> </p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	
+   	<h3> <p align="center">Id: </h3>
+    <p align="center"> 6
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">Sony XPERIA M
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *TFT touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	480 x 854 pixels, 4.0 pulgadas
+    <br>
+	*115 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v4.1 Jelly Bean
+    <br>
+    *Procesador Qualcomm MSM8227 Snapdragon S4 Pro dual-core 1GHz, GPU Adreno 305
+    <br>
+    <br>
+    Camara
+    <br>
+    *5 MP, 2592х1944 pixels, autofocus, flash LED, geo-tagging, foco táctil, detección de rostro, fotos panorámicas 3D, estabilizador de imagen, HDR, video 720p@30fps, cámara frontal VGA
+    <br>
+    <br>
+    Memoria
+    <br>
+	*4GB memoria interna, 1GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 1750 mAh
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$3000
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">9
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">Sony
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">01/06/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+<div data-role="page" id="info7">
+  <div data-role="header">
+  <p align="center"> <img src="images/LG-G5.png" width="461" height="480" /> </p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	<h3> <p align="center">Id: </h3>
+    <p align="center"> 7
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">LG G5
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *LCD IPS Quantum, touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1440 x 2560 pixels, 5.3 pulgadas
+    <br>
+	*159 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v6.0 Marshmallown
+    <br>
+    *Procesador Qualcomm MSM8996 Snapdragon 820 quad-core 2.2GHz, GPU Adreno 530
+    <br>
+    <br>
+    Camara
+    <br>
+    *16 MP + 8 MP, autofocus asistido por láser, flash LED tono dual, foco táctil, apertura f/1.8, detección de rostro y sonrisa, estabilización óptica de imagen, HDR, geo-tagging, video UHD@30fps, sonido stereo, cámara frontal 8 MP 1080p@30fps
+    <br>
+    <br>
+    Memoria
+    <br>
+	*32GB memoria interna, 4GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 2800 mAh intercambiable
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$6200
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">3
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">LG
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">01/06/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="info8">
+  <div data-role="header">
+  <p align="center"> <img src="images/LG_G4.png" width="400" height="400" /></p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	<h3> <p align="center">Id: </h3>
+    <p align="center"> 8
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">LG G4
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *LCD IPS Quantum, touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1440 x 2560 pixels, 5.5 pulgadas
+    <br>
+	*155 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v5.1 Lollipop
+    <br>
+    *Procesador hexa-core Qualcomm MSM8992 Snapdragon 808 1.8 GHz, GPU Adreno 418
+    <br>
+    <br>
+    Camara
+    <br>
+    *16 MP, 5312 x 2988 pixels, autofocus asistido por láser, flash LED tono dual, foco táctil, apertura f/1.8, detección de rostro y sonrisa, estabilización óptica de imagen, HDR, geo-tagging, video UHD@30fps, sonido stereo, cámara frontal 8 MP 1080p@30fps
+    <br>
+    <br>
+    Memoria
+    <br>
+	*32GB memoria interna, 3GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Ion 3000 mAh intercambiable
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$4500
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">3
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">LG
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">01/06/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+
+<div data-role="page" id="info9">
+  <div data-role="header">
+  <p align="center"><img src="images/lg-g-flex-2.png" width="480" height="298" /></p>
+    <h1></h1>
+  </div>
+  
+  <div data-role="content">
+  
+  	<h3> <p align="center">Id: </h3>
+    <p align="center"> 9
+    <h3> <p align="center">Nombre: </h3>
+    <p align="center">LG G FLEX 2
+    <h3><p align="center">Descripcion: </h3>
+    <p align="center">Pantalla 
+    <br>
+    *P-OLED curva, touchscreen capacitivo, 16M colores
+    <br>
+    <br>
+    Tamaño y peso
+    <br>
+	1080 x 1920 pixels, 5.5 pulgadas
+    <br>
+	*152 g
+    <br>
+    <br>
+    Sistema operativo y procesador
+    <br>
+    *Android OS, v5.0.1 Lollipop
+    <br>
+    *Procesador octa-core, 64-bit, Qualcomm MSM8994 Snapdragon 810 2GHz, GPU Adreno 430
+    <br>
+    <br>
+    Camara
+    <br>
+    *13 MP, autofocus asistido por láser, flash LED dual, foco táctil, detección de rostro y sonrisa, estabilización óptica de imagen, HDR, geo-tagging, video UHD@30fps, sonido stereo, cámara frontal 2.1 MP 1080p@30fps
+    <br>
+    <br>
+    Memoria
+    <br>
+	*16GB/32GB memoria interna, 2GB/3GB RAM
+    <br>
+    <br>
+    Bateria
+    <br>
+    *Standard, Li-Po 3000 mAh
+    <br>
+    <h3> <p align="center">Precio: </h3>
+    <p align="center">$7000
+    <h3> <p align="center">Existencia: </h3>
+    <p align="center">3
+    <br>
+    <h3> <p align="center">Categoria: </h3>
+    <p align="center">LG
+    <h3> <p align="center">Fecha de Registro:</h3>
+    <p align="center">02/06/2016
+    </p>
+  </div>
+    
+  <div data-role="footer">
+    <h4>
+    <div data-role="navbar">
+   <ul> 
+<li> <a href="#agregarproductos" data-rel="back" data-role="button" data-icon="arrow-l">Atras</a></li>
+ <li><a href="#inicio" data-role="button" data-icon="home">Inicio</a></li>
+ <li><a href="#info" data-role="button" data-icon="info" data-rel="dialog">Info</a></li>
+ <li><a href="#info" data-role="button" data-icon="arrow-r">Siguiente</a></li>
+ </ul>
+ </div>
+    </h4>
+  </div>
+</div>
+
+
+</body>
+</html>
